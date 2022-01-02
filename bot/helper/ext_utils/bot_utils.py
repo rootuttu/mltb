@@ -127,14 +127,14 @@ def get_readable_message():
             START = COUNT
         for index, download in enumerate(list(download_dict.values())[START:], start=1):
             msg += f"╭─📂 <b>Name:</b> <code>{download.name()}</code>"
-            msg += f"\n├─ <b>Status:</b> <i>{download.status()}</i>"
+            msg += f"\n├─⚙️ <b>Status:</b> <i>{download.status()}</i>"
             if download.status() not in [
                 MirrorStatus.STATUS_ARCHIVING,
                 MirrorStatus.STATUS_EXTRACTING,
                 MirrorStatus.STATUS_SPLITTING,
                 MirrorStatus.STATUS_SEEDING,
             ]:
-                msg += f"\n├─⚙️{get_progress_bar_string(download)} {download.progress()}"
+                msg += f"\n├─📝{get_progress_bar_string(download)} {download.progress()}"
                 if download.status() == MirrorStatus.STATUS_CLONING:
                     msg += f"\n├─♻️ <b>Cloned:</b> {get_readable_file_size(download.processed_bytes())} of {download.size()}"
                 elif download.status() == MirrorStatus.STATUS_UPLOADING:
