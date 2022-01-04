@@ -288,8 +288,8 @@ sudo docker-compose start
 
 ```
 mirror - Mirror
-zipmirror - Mirror and upload as zip
-unzipmirror - Mirror and extract files
+zip - Mirror and upload as zip
+unzip - Mirror and extract files
 qbmirror - Mirror torrent using qBittorrent
 qbzipmirror - Mirror torrent and upload as zip using qb
 qbunzipmirror - Mirror torrent and extract files using qb
