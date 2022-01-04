@@ -291,8 +291,8 @@ mirror - Mirror
 zip - Mirror and upload as zip
 unzip - Mirror and extract files
 qbmirror - Mirror torrent using qBittorrent
-qbzipmirror - Mirror torrent and upload as zip using qb
-qbunzipmirror - Mirror torrent and extract files using qb
+qbzip - Mirror torrent and upload as zip using qb
+qbunzip - Mirror torrent and extract files using qb
 leech - Leech
 zipleech - Leech and upload as zip
 unzipleech - Leech and extract files
