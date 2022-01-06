@@ -11,7 +11,7 @@ from telegram import ParseMode, InlineKeyboardMarkup
 from telegram.ext import CommandHandler
 
 from wserver import start_server_async
-from bot import bot, app, dispatcher, updater, botStartTime, IGNORE_PENDING_REQUESTS, IS_VPS, PORT, alive, web, OWNER_ID, AUTHORIZED_CHATS, LOGGER, Interval, nox
+from bot import bot, app, dispatcher, updater, botStartTime, IGNORE_PENDING_REQUESTS, IS_VPS, PORT, alive, web, OWNER_ID, AUTHORIZED_CHATS, LOGGER, Interval, nox, Image_URL
 from bot.helper.ext_utils import fs_utils
 from bot.helper.telegram_helper.bot_commands import BotCommands
 from bot.helper.telegram_helper.message_utils import sendMessage, sendMarkup, editMessage, sendLogFile
@@ -58,7 +58,7 @@ def stats(update, context):
             f'├─💾<b>Memory Free:</b> {mem_a}\n'\
             f'├─💻<b>Memory Used:</b> {mem_u}\n│\n'\
             f'╰───『💥 <a href="https://t.me/+SpnPh2Gc8kHwwAAF"><b>𝐑𝐨𝐨𝐭 𝐆𝐚𝐦𝐞𝐫</b></a> 💥』\n'
-    sendMessage(stats, context.bot, update)
+    sendMessage(Image_URL, stats, context.bot, update)
 
 
 def start(update, context):
