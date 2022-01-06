@@ -10,7 +10,7 @@ from bot import AUTO_DELETE_MESSAGE_DURATION, LOGGER, bot, status_reply_dict, st
 from bot.helper.ext_utils.bot_utils import get_readable_message, setInterval
 
 
-def sendMessage(IMAGE_URL, text: str, bot, update: Update):
+def sendMessage(text: str, bot, update: Update):
     try:
         return bot.send_message(update.message.chat_id,
                             reply_to_message_id=update.message.message_id,
