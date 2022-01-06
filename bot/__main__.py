@@ -58,7 +58,7 @@ def stats(update, context):
             f'├─💾<b>Memory Free:</b> {mem_a}\n'\
             f'├─💻<b>Memory Used:</b> {mem_u}\n│\n'\
             f'╰───『💥 <a href="https://t.me/+SpnPh2Gc8kHwwAAF"><b>𝐑𝐨𝐨𝐭 𝐆𝐚𝐦𝐞𝐫</b></a> 💥』\n'
-    sendMessage(IMAGE_URL, stats, context.bot, update)
+    sendMessage(stats, context.bot, update)
 
 
 def start(update, context):
@@ -73,7 +73,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
-        sendMarkup('🤬Chalaja BSDK🤬\nJoin channel & use', context.bot, update, reply_markup)
+        sendMarkup(IMAGE_URL, '🤬Chalaja BSDK🤬\nJoin channel & use', context.bot, update, reply_markup)
 
 def restart(update, context):
     restart_message = sendMessage("Restarting 🔧", context.bot, update)
