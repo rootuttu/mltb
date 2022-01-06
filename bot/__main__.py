@@ -73,7 +73,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
-        sendMarkup(IMAGE_URL, '🤬Chalaja BSDK🤬\nJoin channel & use', context.bot, update)
+        sendMarkup('🤬Chalaja BSDK🤬\nJoin channel & use', context.bot, update, reply_markup)
 
 def restart(update, context):
     restart_message = sendMessage("Restarting 🔧", context.bot, update)
