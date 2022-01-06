@@ -415,12 +415,6 @@ except KeyError:
     PHPSESSID = None
     CRYPT = None
 try:
-    IMAGE_URL = getConfig('IMAGE_URL')
-    if len(IMAGE_URL) == 0:
-        IMAGE_URL = 'https://mirror.paid-course.workers.dev/0:/IMG_20220106_135700_207.jpg'
-except KeyError:
-    IMAGE_URL = 'https://mirror.paid-course.workers.dev/0:/IMG_20220106_135700_207.jpg'
-try:
     TOKEN_PICKLE_URL = getConfig('TOKEN_PICKLE_URL')
     if len(TOKEN_PICKLE_URL) == 0:
         raise KeyError
